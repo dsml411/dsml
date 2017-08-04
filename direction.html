@@ -4,7 +4,6 @@
 <head>
 	<title>研究方向 - 前瞻元件與技術實驗室</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <style>
@@ -27,16 +26,30 @@ img:hover.show{
 
 div.pick {
 	float:left;
-	width:25%;
+	width:23%;
 	background-color:#1045a3;
 	border-style:ridge;
 	border-width:7px;
 }
 .mySlides {
-	height:250px
+	padding:15px auto;
+	height:270px
 }
 .demo {
-	cursor:pointer
+	cursor:pointer;
+	width:auto; 
+	height:125px;
+	display:block;
+	margin:auto;
+	padding:10px;
+	opacity:0.6;
+}
+img:hover.demo{
+	opacity:1;
+}
+
+.visible{
+	opacity:1
 }
 </style>
 <body>
@@ -70,8 +83,28 @@ div.pick {
 					研究方向
 				</h1>
 				<hr color='black'>
-				<div class="w3-content">
-					<!--------------------------------------------------------------------------------------------------------------->
+				<div style='width:100%;margin:auto;'>
+					
+					<div style='margin-top:16px;margin-bottom:16px;padding:0 8px;height:170px'>
+						<div class='pick'>
+							<img class="demo" src="https://dsmlnctu.files.wordpress.com/2015/06/finfet.png" 
+								onclick="currentDiv(1)">
+						</div>					
+						<div class="pick">
+						  <img class="demo" src="https://dsmlnctu.files.wordpress.com/2015/06/tfet.png"
+							onclick="currentDiv(2)">					  
+						</div>
+						<div class="pick">
+						  <img class="demo" src="https://dsmlnctu.files.wordpress.com/2015/06/rram.png" 
+							onclick="currentDiv(3)">
+						</div>
+						<div class="pick">
+						  <img class="demo" src="https://dsmlnctu.files.wordpress.com/2015/06/otp.png" 
+							onclick="currentDiv(4)">
+						</div>
+					</div>
+					
+					<!--以下主題的內容------------------------------------------------------------------------------------------------>
 					<div class="mySlides">
 						<div class='title'>新一代奈米CMOS元件FinFET結構設計及製作</div>
 						<img class='show' src="https://dsmlnctu.files.wordpress.com/2015/06/finfet.png">
@@ -124,25 +157,6 @@ div.pick {
 						</div>
 					</div>
 					<!--------------------------------------------------------------------------------------------------------------->
-
-			    <div class="w3-row-padding w3-section">
-					<div class='pick'>
-						<img class="demo w3-opacity w3-hover-opacity-off" src="https://dsmlnctu.files.wordpress.com/2015/06/finfet.png" 
-							style="width:auto; height:150px;display:block;margin:auto;padding:10px;" onclick="currentDiv(1)">
-					</div>					
-					<div class="pick">
-					  <img class="demo w3-opacity w3-hover-opacity-off" src="https://dsmlnctu.files.wordpress.com/2015/06/tfet.png"
-						style="width:auto; height:150px;display:block;margin:auto;padding:10px;" onclick="currentDiv(2)">					  
-					</div>
-					<div class="pick">
-					  <img class="demo w3-opacity w3-hover-opacity-off" src="https://dsmlnctu.files.wordpress.com/2015/06/rram.png" 
-						style="width:auto; height:150px;display:block;margin:auto;padding:10px;" onclick="currentDiv(3)">
-					</div>
-					<div class="pick">
-					  <img class="demo w3-opacity w3-hover-opacity-off" src="https://dsmlnctu.files.wordpress.com/2015/06/otp.png" 
-						style="width:auto; height:150px;display:block;margin:auto;padding:10px;" onclick="currentDiv(4)">
-					</div>
-			    </div>
 			  </div>
 
 			<script>
@@ -167,10 +181,10 @@ div.pick {
 					 x[i].style.display = "none";
 				  }
 				  for (i = 0; i < dots.length; i++) {
-					 dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+					 dots[i].className = dots[i].className.replace(" visible", "");
 				  }
 				  x[slideIndex-1].style.display = "block";
-				  dots[slideIndex-1].className += " w3-opacity-off";
+				  dots[slideIndex-1].className += " visible";
 				}
 			</script>
 		</ul>		
