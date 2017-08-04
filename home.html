@@ -5,8 +5,6 @@
 	<meta charset="UTF-8">
 	<title>首頁 - 前瞻元件與技術實驗室</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style>
 p.news{line-height:20px;
@@ -20,7 +18,9 @@ a:hover {
 	color: blue;
 }
 .mySlides {
-}
+	position:relative;
+	animation:animateleft 0.5s;
+}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 </style>
 <body>
 	<div id="header">
@@ -52,7 +52,7 @@ a:hover {
 			<li>
 				<div class="contenttitle">前瞻元件與技術實驗室</div>
 				<br>
-				<div style='border: 2px dashed red;  padding:10px; background:white'>
+				<div style='border: 5px ridge #1045a3;  padding:10px; background:white'>
 					<h3 style='font-weight:bold;font-family:cursive;text-shadow:3px 3px 3px #cccccc;'>What's new!</h3>
 					<p class='news'>
 						“賀" 2016.10 莊紹勳教授 獲頒台灣電機電子工程學會 (TIEEE) 博士論文優等指導獎<hr>
@@ -132,7 +132,7 @@ a:hover {
 					myIndex++;
 					if (myIndex > x.length) {myIndex = 1}    
 					x[myIndex-1].style.display = "block";  
-					setTimeout(carousel, 2000); // Change image every 2 seconds
+					setTimeout(carousel, 5000); // setTimeout(function,t(ms))
 				}
 			</script>	
 				
