@@ -44,7 +44,7 @@ body {
 #header ul li {
 	float: left;
 	list-style: none;
-	margin: 0 0 0 116px;
+	margin: 0 0 0 110px;
 	;
 	padding: 0;
 }
@@ -768,6 +768,11 @@ body {
 .size {
     font-size: 12pt;
 }
+.sizee{
+	font-size: 12pt;
+	position:relative;
+	left:58%;
+}
 .keireki{
 	font-size: 12pt;
 	max-width: 960px;
@@ -780,6 +785,14 @@ body {
 	font-size: 12pt;
 	width: 10em;
 	text-indent:1em;
+	vertical-align:top;
+	float: left;
+	margin:0px;
+	}
+.year1{
+	font-size: 12pt;
+	width: 10em;
+	text-align:left;
 	vertical-align:top;
 	float: left;
 	margin:0px;
@@ -811,4 +824,8 @@ body {
 }
 #author{
     text-align:right;
+}
+
+#eray {
+	font-size:13pt;
 }
