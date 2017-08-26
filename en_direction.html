@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<title>direction - DSML 411lab</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <style>
 div.title {
@@ -14,6 +13,7 @@ div.title {
 	padding:10px;
 	font-weight:bold;
 	background: #e6e6e6;
+	margin:38px 0 0 0;
 }
 div.pic{
 	float:left;
@@ -27,45 +27,93 @@ img.show{
 img:hover.show{
 	height:400px;
 }
+a.link1{
+	color:#37a537;
+	font-size:5px;
+	text-decoration-line:none;
+}
+a:hover.link1{color:red;}
+a.link2{
+	color:#4a7ebb;
+	font-size:5px;
+	text-decoration-line:none;
+}
+a:hover.link2{color:red;}
+button.but{
+	background-color:#337ab7;
+	background-image:none;
+	border-color:#2e6da4;
+	color:white;
+	float:left;
+	border-style:solid;
+	border-width:1px;
+	display:block;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding:6px 12px 6px 12px;
+	position:relative;
+	touch-action:manipulation;
+	user-select:none;
+	white-spacing:0;
+}
 </style>
 <body>
 	<div id="header">
+		<div class='language'><a class='language'href='direction.html'>中文</a> / English</div>
 		<a href="home_en.html" class="logo"><img src="images/logo.png" alt=""></a>
 		<ul>
 			<li>
-				<a href="home_en.html">home</a>
+				<a href="en_home.html">news</a>
 			</li>
 			<li>
-				<a href="about_en.html">about</a>
+				<a href="en_about.html">home</a>
 			</li>
-			<li  class="selected">
-				<a href="direction_en.html">direction</a>
-			</li>
-			<li>
-				<a href="member_en.html">members</a>
+			<li class="selected">
+				<a href="en_direction.html">topics</a>
 			</li>
 			<li>
-				<a href="research_en.html">research</a>
+				<a href="en_member.html">members</a>
 			</li>
 			<li>
-				<a href="acess_en.html">acess</a>
+				<a href="en_research.html">publication</a>
+			</li>
+			<li>
+				<a href="en_access.html">connect us</a>
 			</li>
 		</ul>
 	</div>
-	<div style='text-align:center'><a href='direction.html'>中文</a> / English</div>
 	<div id="body">
 		<ul>
-			<li><a name='FinFet'></a>
+			<li>
 				<h1 style='border: 1px none powderblue;margin:10px;padding:10px;font-weight:bold;font-size=larger;text-shadow: 1px 1px 3px black;'>
-					Research Direction
+					Research Topics
 				</h1>
 				<hr style='border-width: 2px;'>
-				
-				<div id='main'class="btn-group" style='padding:0 0 0 12px;'>
-					<button class="btn btn-primary" style='color:yellow;'>FinFet</button>
-					<button class="btn btn-primary" onclick='myclick(1)'>TFET</button>
-					<button class="btn btn-primary" onclick='myclick(2)'>RRAM</button>
-					<button class="btn btn-primary" onclick='myclick(3)'>eNVM</button>
+				<img style='width:55%;margin:2% 0 0 4%;'src="images/topic.png">
+				<div style='float:right;width:40%;'>
+					<div style='color:#37a537;padding:7% 0 0 0;'>
+						<div style='font-size:16px;'>1. Embedded Memory<a href='#RRAM'class='link1'>......read more</a></div><br><br>			
+						<div style='font-size:16px;'>2. Neuromorphic Computing<a class='link1'>......read more</a></div> 					
+					</div>
+					<div style='border: 5px ridge #1045a3;height:330px;margin:37% 0 0 0;'>
+						
+					</div>
+				</div>
+				<div style='color:#4a7ebb;margin:0 0 0 3.6%;'>
+					<div style='font-size:16px;'>
+						1. FinFETs<a href='#FinFet'class='link2'>......read more</a>
+					</div> 
+					<div style='font-size:16px;'>2. Naonowire</div>
+					<div style='font-size:16px;'>
+						3. TFETs<a href='#TFET' class='link2'>......read more</a>
+					</div> 					
+					<div style='font-size:16px;'>4. NC-FETs</div> 
+				</div>
+			<li><a name='FinFet'></a>	
+				<div id='main'>
+					<button class="but"style='border-top-left-radius:4px;border-bottom-left-radius:4px;color:yellow;'>FinFet</button>
+					<button class="but" onclick='myclick(1)'>TFET</button>
+					<button class="but" onclick='myclick(2)'>RRAM</button>
+					<button class="but" onclick='myclick(3)'style='border-top-right-radius:4px;border-bottom-right-radius:4px;'>eNVM</button>
 				</div>				
 				
 				
@@ -89,11 +137,11 @@ img:hover.show{
 			
 			<li>
 				<a name='TFET'></a>
-				<div id='main'class="btn-group" style='padding:0 0 0 12px;'>
-					<button class="btn btn-primary" onclick='myclick(0)'>FinFet</button>
-					<button class="btn btn-primary" style='color:yellow;'>TFET</button>
-					<button class="btn btn-primary" onclick='myclick(2)'>RRAM</button>
-					<button class="btn btn-primary" onclick='myclick(3)'>eNVM</button>
+				<div id='main'>
+					<button class="but"style='border-top-left-radius:4px;border-bottom-left-radius:4px;' onclick='myclick(0)'>FinFet</button>
+					<button class="but" style='color:yellow;'>TFET</button>
+					<button class="but" onclick='myclick(2)'>RRAM</button>
+					<button class="but" onclick='myclick(3)'style='border-top-right-radius:4px;border-bottom-right-radius:4px;'>eNVM</button>
 				</div>
 				<div class='title'>Simulation and Process of Low Power Tunneling Transistors Structure (Tunneling FET)</div>
 				<div class="pic">
@@ -110,11 +158,11 @@ img:hover.show{
 				</div>
 			<li>
 				<a name='RRAM'></a>
-				<div id='main'class="btn-group" style='padding:0 0 0 12px;'>
-					<button class="btn btn-primary" onclick='myclick(0)'>FinFet</button>
-					<button class="btn btn-primary" onclick='myclick(1)'>TFET</button>
-					<button class="btn btn-primary" style='color:yellow;'>RRAM</button>
-					<button class="btn btn-primary" onclick='myclick(3)'>eNVM</button>
+				<div id='main'>
+					<button class="but"style='border-top-left-radius:4px;border-bottom-left-radius:4px;' onclick='myclick(0)'>FinFet</button>
+					<button class="but" onclick='myclick(1)'>TFET</button>
+					<button class="but" style='color:yellow;'>RRAM</button>
+					<button class="but" onclick='myclick(3)'style='border-top-right-radius:4px;border-bottom-right-radius:4px;'>eNVM</button>
 				</div>
 
 				<div class='title'>Reliability and Process of New Generation Resistive Random Access Memory</div>
@@ -134,11 +182,11 @@ img:hover.show{
 			
 			<li>
 				<a name='eNVM'></a>
-				<div id='main'class="btn-group" style='padding:0 0 0 12px;'>
-					<button class="btn btn-primary" onclick='myclick(0)'>FinFet</button>
-					<button class="btn btn-primary" onclick='myclick(1)'>TFET</button>
-					<button class="btn btn-primary" onclick='myclick(2)'>RRAM</button>
-					<button class="btn btn-primary" style='color:yellow;'>eNVM</button>
+				<div id='main'>
+					<button class="but"style='border-top-left-radius:4px;border-bottom-left-radius:4px;' onclick='myclick(0)'>FinFet</button>
+					<button class="but" onclick='myclick(1)'>TFET</button>
+					<button class="but" onclick='myclick(2)'>RRAM</button>
+					<button class="but" style='color:yellow;border-top-right-radius:4px;border-bottom-right-radius:4px;'>eNVM</button>
 				</div>
 
 				<div class='title'>Write Once Memory Design of Fuse Breakdown Mechanism of Dielectric Layer and Reliable Analysis of Device Array</div>
@@ -146,14 +194,14 @@ img:hover.show{
 					<img class='show'src="https://dsmlnctu.files.wordpress.com/2015/06/otp.png">
 				</div>
 				<div class='article'>
-					<div style='float:left;width:47%;line-height:30px;padding:0 15px 10px 10px;font-size:20px;'>
+					<div style='float:left;width:48%;line-height:30px;padding:0 15px 10px 10px;font-size:20px;'>
 						<h3>Fuse</h3>
 							select transistor + 1 resistor<br>
 							<b>Write</b>：electons migrated by large current<br>
 							<b>Advantages</b>：smaller size and larger current density<br>
 							<b>Disadvantages</b>：need high current and waste energy
 					</div>
-					<div style='float:left;width:53%;line-height:30px;padding:0 0 10px;font-size:20px;'>
+					<div style='float:left;width:48%;line-height:30px;padding:0 0 10px;font-size:20px;'>
 						<h3>Anti-Fuse</h3>
 						select transistor + 1 storage transistor<br>
 						<b>Write</b>：break through dielectric layer with large voltage between Gate and tunnel<br>
@@ -172,24 +220,12 @@ img:hover.show{
 	</script>
 	
 	<div id="footer">
+		<div id="footer">
 		<div>
 			<p>
-				<span>2023 &copy; Illumelabs Diagnostic Center.</span><a href="#" >Terms of Service</a> | <a href="#" >Privacy Policy</a>
+				<img src='images/IEEE.jpg'style='height:15px;margin:0 4px 0 0;'>
+				<a href='https://www.facebook.com/edsNCTUXNTHU/'target="_blank">IEEE Electron Device Society Taipei section 清交學生分會</a>
 			</p>
-			<ul>
-				<li id="facebook">
-					<a href="http://freewebsitetemplates.com/go/facebook/">facebook</a>
-				</li>
-				<li id="twitter">
-					<a href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
-				</li>
-				<li id="googleplus">
-					<a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a>
-				</li>
-				<li id="rss">
-					<a href="#" >rss</a>
-				</li>
-			</ul>
 		</div>
 	</div>
 </body>
