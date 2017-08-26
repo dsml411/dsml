@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<title>研究方向 - 前瞻元件與技術實驗室</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <style>
 div.title {
@@ -14,6 +13,7 @@ div.title {
 	padding:10px;
 	font-weight:bold;
 	background: #e6e6e6;
+	margin:38px 0 0 0;
 }
 div.pic{
 	float:left;
@@ -27,9 +27,31 @@ img.show{
 img:hover.show{
 	height:400px;
 }
+a.link{
+	color:#37a537;font-size:5px;
+	text-decoration-line:none;
+}
+a:hover.link{color:red;}
+button.but{
+	background-color:#337ab7;
+	background-image:none;
+	border-color:#2e6da4;
+	color:white;
+	float:left;
+	border-style:solid;
+	border-width:1px;
+	display:block;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding:6px 12px 6px 12px;
+	position:relative;
+	touch-action:manipulation;
+	user-select:none;
+	white-spacing:0;
+}
 </style>
 <body>
 	<div id="header">
+		<div class='language'>中文 / <a class='language'href='en_direction.html'>English</a></div>	
 		<a href="home.html" class="logo"><img src="images/logo.png" alt=""></a>
 		<ul>
 			<li>
@@ -51,8 +73,7 @@ img:hover.show{
 				<a href="access.html">位置</a>
 			</li>
 		</ul>
-	</div>s
-	<div style='text-align:center'>中文 / <a href='direction_en.html'>English</a></div>	
+	</div>
 	<div id="body">
 		<ul>
 			<li>
@@ -62,21 +83,21 @@ img:hover.show{
 				<hr style='border-width: 2px;'>
 				<img style='width:55%;margin:2% 0 0 4%;'src="images/topic.png">
 				<div style='float:right;width:40%;'>
-					<div style='color:#37a537;padding:3% 0 0 0;'>
-						<div style='font-size:16px;'>1. Embedded Memory<a href='#RRAM'style='color:#37a537;font-size:5px;'>......請深入了解</a></div><br><br>			
-						<div style='font-size:16px;'>2. Neuromorphic Computing<a style='color:#37a537;font-size:5px;'>......請深入了解</a></div> 					
+					<div style='color:#37a537;padding:7% 0 0 0;'>
+						<div style='font-size:16px;'>1. Embedded Memory<a href='#RRAM'class='link'>......請深入了解</a></div><br><br>			
+						<div style='font-size:16px;'>2. Neuromorphic Computing<a class='link'>......請深入了解</a></div> 					
 					</div>
 					<div style='border: 5px ridge #1045a3;height:330px;margin:23% 0 0 0;'>
 						文字介紹
 					</div>
 				</div>
-				<div style='color:#4a7ebb;margin:0 0 0 3.4%;'>
+				<div style='color:#4a7ebb;margin:0 0 0 3.6%;'>
 					<div style='font-size:16px;'>
-						1. FinFETs<a href='#FinFet'style='color:#4a7ebb;font-size:5px;'>......請深入了解</a>
+						1. FinFETs<a href='#FinFet'class='link'>......請深入了解</a>
 					</div> 
 					<div style='font-size:16px;'>2. Naonowire</div>
 					<div style='font-size:16px;'>
-						3. TFETs<a href='#TFET' style='color:#4a7ebb;font-size:5px;'>......請深入了解</a>
+						3. TFETs<a href='#TFET' class='link'>......請深入了解</a>
 					</div> 					
 					<div style='font-size:16px;'>4. NC-FETs</div> 
 				</div>
@@ -84,11 +105,11 @@ img:hover.show{
 
 
 			<li><a name='FinFet'></a>
-				<div id='main'class="btn-group" style='padding:0 0 0 12px;'>
-					<button class="btn btn-primary" style='color:yellow;'>FinFet</button>
-					<button class="btn btn-primary" onclick='myclick(1)'>TFET</button>
-					<button class="btn btn-primary" onclick='myclick(2)'>RRAM</button>
-					<button class="btn btn-primary" onclick='myclick(3)'>eNVM</button>
+				<div id='main'>
+					<button class="but"style='border-top-left-radius:4px;border-bottom-left-radius:4px;color:yellow;'>FinFet</button>
+					<button class="but" onclick='myclick(1)'>TFET</button>
+					<button class="but" onclick='myclick(2)'>RRAM</button>
+					<button class="but" onclick='myclick(3)'style='border-top-right-radius:4px;border-bottom-right-radius:4px;'>eNVM</button>
 				</div>				
 				
 				
@@ -112,11 +133,11 @@ img:hover.show{
 			
 			<li>
 				<a name='TFET'></a>
-				<div id='main'class="btn-group" style='padding:0 0 0 12px;'>
-					<button class="btn btn-primary" onclick='myclick(0)'>FinFet</button>
-					<button class="btn btn-primary" style='color:yellow;'>TFET</button>
-					<button class="btn btn-primary" onclick='myclick(2)'>RRAM</button>
-					<button class="btn btn-primary" onclick='myclick(3)'>eNVM</button>
+				<div id='main'>
+					<button class="but"style='border-top-left-radius:4px;border-bottom-left-radius:4px;' onclick='myclick(0)'>FinFet</button>
+					<button class="but" style='color:yellow;'>TFET</button>
+					<button class="but" onclick='myclick(2)'>RRAM</button>
+					<button class="but" onclick='myclick(3)'style='border-top-right-radius:4px;border-bottom-right-radius:4px;'>eNVM</button>
 				</div>
 				<div class='title'>低功耗穿隧式電晶體結構模擬與製程(Tunneling FET)</div>
 				<div class="pic">
@@ -133,11 +154,11 @@ img:hover.show{
 				</div>
 			<li>
 				<a name='RRAM'></a>
-				<div id='main'class="btn-group" style='padding:0 0 0 12px;'>
-					<button class="btn btn-primary" onclick='myclick(0)'>FinFet</button>
-					<button class="btn btn-primary" onclick='myclick(1)'>TFET</button>
-					<button class="btn btn-primary" style='color:yellow;'>RRAM</button>
-					<button class="btn btn-primary" onclick='myclick(3)'>eNVM</button>
+				<div id='main'>
+					<button class="but"style='border-top-left-radius:4px;border-bottom-left-radius:4px;' onclick='myclick(0)'>FinFet</button>
+					<button class="but" onclick='myclick(1)'>TFET</button>
+					<button class="but" style='color:yellow;'>RRAM</button>
+					<button class="but" onclick='myclick(3)'style='border-top-right-radius:4px;border-bottom-right-radius:4px;'>eNVM</button>
 				</div>
 
 				<div class='title'>新世代電阻式隨機存取記憶體，可靠度與製程</div>
@@ -157,11 +178,11 @@ img:hover.show{
 			
 			<li>
 				<a name='eNVM'></a>
-				<div id='main'class="btn-group" style='padding:0 0 0 12px;'>
-					<button class="btn btn-primary" onclick='myclick(0)'>FinFet</button>
-					<button class="btn btn-primary" onclick='myclick(1)'>TFET</button>
-					<button class="btn btn-primary" onclick='myclick(2)'>RRAM</button>
-					<button class="btn btn-primary" style='color:yellow;'>eNVM</button>
+				<div id='main'>
+					<button class="but"style='border-top-left-radius:4px;border-bottom-left-radius:4px;' onclick='myclick(0)'>FinFet</button>
+					<button class="but" onclick='myclick(1)'>TFET</button>
+					<button class="but" onclick='myclick(2)'>RRAM</button>
+					<button class="but" style='color:yellow;border-top-right-radius:4px;border-bottom-right-radius:4px;'>eNVM</button>
 				</div>
 
 				<div class='title'>介電層熔斷崩潰機制之單次寫入記憶體設計、元件陣列之可靠性研究</div>
@@ -197,22 +218,9 @@ img:hover.show{
 	<div id="footer">
 		<div>
 			<p>
-				<span>2023 &copy; Illumelabs Diagnostic Center.</span><a href="#" >Terms of Service</a> | <a href="#" >Privacy Policy</a>
+				<img src='images/IEEE.jpg'style='height:15px;margin:0 4px 0 0;'>
+				<a href='https://www.facebook.com/edsNCTUXNTHU/'target="_blank">IEEE Electron Device Society Taipei section 清交學生分會</a>
 			</p>
-			<ul>
-				<li id="facebook">
-					<a href="http://freewebsitetemplates.com/go/facebook/">facebook</a>
-				</li>
-				<li id="twitter">
-					<a href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
-				</li>
-				<li id="googleplus">
-					<a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a>
-				</li>
-				<li id="rss">
-					<a href="#" >rss</a>
-				</li>
-			</ul>
 		</div>
 	</div>
 </body>
