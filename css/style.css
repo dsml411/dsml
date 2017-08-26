@@ -1,13 +1,13 @@
 /*Website Template by freewebsitetemplates.com */
 
 @font-face {
-	font-family: 'Conv_Ubuntu-Light';
+	font-family: 'Calibri';
 	src: url('../fonts/Ubuntu-Light.eot');
 	src: url('../fonts/Ubuntu-Light.woff') format('woff'), url('../fonts/Ubuntu-Light.ttf') format('truetype'), url('../fonts/Ubuntu-Light.svg') format('svg');
 }
 body {
 	background: url(../images/bg-body.jpg) repeat;
-	font-family: 'Conv_Ubuntu-Light';
+	font-family: 'Calibri';
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 1;
@@ -32,12 +32,11 @@ body {
 	display: block;
 	text-align: center;
 	margin: 0 auto;
-	height:105px;
+	padding:0 64px 0 0;
 }
 #header ul {
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 0 0 22px;
 	text-align: center;
 	width: 960px;
 }
@@ -221,7 +220,7 @@ body {
 	min-height: 1100px;
 	overflow: hidden;
 	padding: 20px 0;
-	width: 960px;
+	width: 1210px;
 }
 #body .sidebar {
 	background:#0f45a2;
@@ -366,7 +365,7 @@ body {
 	margin: 0;
 	padding: 0 0 0 12px;
 	overflow: hidden;
-	width: 704px;
+	width: 950px;
 	font-size:20px;
 }
 #body ul li .article p {
@@ -472,7 +471,7 @@ body {
 	color: #000000;
 	display: block;
 	float: left;
-	font-family: 'Conv_Ubuntu-Light';
+	font-family: 'Calibri';
 	font-size: 14px;
 	height: 21px;
 	margin: 0;
@@ -484,7 +483,7 @@ body {
 	color: #000000;
 	display: block;
 	float: left;
-	font-family: 'Conv_Ubuntu-Light';
+	font-family: 'Calibri';
 	font-size: 14px;
 	height: 147px;
 	margin: 0;
@@ -670,11 +669,10 @@ body {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
-	width: 960px;
+	width: 1210px;
 }
 #footer div p {
-	color: #000000;
-	float: left;
+	float: right;
 	font-size: 11px;
 	line-height: 27px;
 	margin: 0;
@@ -684,11 +682,10 @@ body {
 	padding: 0 16px 0 0;
 }
 #footer div p a {
-	color: #000000;
 	text-decoration: none;
 }
 #footer div p a:hover {
-	color: #000;
+	color: blue;
 }
 #footer div ul {
 	float: right;
@@ -736,6 +733,18 @@ body {
 	background-position: -32px -111px;
 }
 /*新增的css*/
+div.language{
+	text-align:center;
+	padding:85px 6px 0 0;
+	font-size:18px;
+	float:right;
+	color:white;
+}
+a.language{
+	text-decoration-line:none;	
+	color:white;
+}
+a:hover.language{color:yellow;}
 .contenttitle {
 	font-weight: bold;
 	font-size:12pt;
@@ -771,7 +780,10 @@ body {
 .sizee{
 	font-size: 12pt;
 	position:relative;
-	left:58%;
+	padding:0 36.5% 0 0;
+	width:18%;
+	float:right;
+	margin:0 auto;
 }
 .keireki{
 	font-size: 12pt;
