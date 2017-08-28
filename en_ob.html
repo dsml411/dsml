@@ -3,10 +3,9 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>members - DSML 411lab</title>
+	<title>ob - DSML 411lab</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<script type="text/javascript" src="oritatami.js"></script>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style>
 #myfilter td,th{
@@ -24,7 +23,7 @@
 	<div id="header">
 		<div class='language'><a class='language'href='ob.html'>中文</a> / English</div>
 		<a href="en_home.html" class="logo"><img src="images/logo.png" alt=""></a>
-		<ul style='width:1062px'>
+		<ul>
 			<li>
 				<a href="en_home.html">news</a>
 			</li>
@@ -53,8 +52,8 @@
 				<p class="title">Graduates</p>
 				
 				<div style='width:210px; border-width:0 30px 30px; border-style:solid;border-color:transparent transparent #1045a3;
-					color:white; height:0;padding:0 0 0 48px; font-size:18px'>
-					<b>Search</b>
+					color:white; height:0; font-size:18px'>
+					<a style="margin: 0px 0 0 64px;line-height: 30px;"><b>Search</b></a>
 				</diV>
 				<table id='myfilter'style='width:1170px;background-color:#f5f5f5;border: 2px ridge #1045a3;'>
 					<tr>
@@ -65,44 +64,40 @@
 					</tr>
 					<tr>
 						<td>
-							<input class="w3-input w3-border" type="text" 
-							id="member_" onkeyup="Filter(0)"style="width:80px;padding:8px 0 8px 2px;">
+							<input type="text" id="member_" onkeyup="Filter(0)"style="width:80px;padding:8px 0 8px 2px;">
 						</td>
 						<td>
-							<input class="w3-input w3-border" type="text" placeholder="1999 ~" 
-							id="year" onkeyup="Filter(1)"style="width:80px;padding:8px 0 8px 2px;">
+							<input type="text" placeholder="1999 ~" id="year" onkeyup="Filter(1)"style="width:109px;padding:8px 0 8px 2px;">
 						</td>
 						<td>
-							<input class="w3-input w3-border" type="text" 
-							id="topic" onkeyup="Filter(2)"style="width:630px;padding:8px 0 8px 2px;">
+							<input type="text" id="topic" onkeyup="Filter(2)"style="width:630px;padding:8px 0 8px 2px;">
 						</td>
 						<td>
-							<input class="w3-input w3-border" type="text" 
-							id="future" onkeyup="Filter(3)"style="width:120px;padding:8px 0 8px 2px;">
+							<input type="text" id="future" onkeyup="Filter(3)"style="width:149px;padding:8px 0 8px 2px;">
 						</td>
 					</tr>
 				</table><br><br>
 				
 				<table id='mytable'>
-					<th>Name</th>
-					<th>Graduation Year</th>
-					<th style='width:60%'>Topic of Graduation Thesis</th>
-					<th>Job After Graduation</th>
+					<th>研究生</th>
+					<th>畢業年份</th>
+					<th style='width:60%'>畢業論文題目</th>
+					<th>畢業後就職公司</th>
 					<tr>
-						<td>李俊威</td>
-						<td>2016(碩)</td>
+						<td>李俊葳</td>
+						<td>2016年(碩)</td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>范揚群</td>
-						<td>2016(碩)</td>
+						<td>2016年(碩)</td>
 						<td>RTN breakdwon path of trigate CMOS devices</td>
 						<td>世界先進</td>
 					</tr>
 					<tr>
 						<td>程皓瑋</td>
-						<td>2016(碩)</td>
+						<td>2016年(碩)</td>
 						<td> A Novel ReWritable One-Time-Programming Memory Realized by Dielectric-fuse of RRAM for Embedded Applicatiion</td>
 						<td>聯電</td>
 					</tr>
@@ -140,13 +135,13 @@
 						<td>王元鼎</td>
 						<td>2015年(碩)</td>
 						<td> New Understandings on the Correlation Between Work-function Fluctuation ant Vth Variation in HKMG CMOS Devices</td>
-						<td></td>
+						<td>聯電</td>
 					</tr>
 					<tr>
 						<td>楊勝博</td>
 						<td>2015年(碩)</td>
 						<td> The Design and Optimization of a Low Power Bi-layer Resistance RAM</td>
-						<td></td>
+						<td>聯電</td>
 					</tr>
 					<tr>
 						<td>莊嘉暉</td>
@@ -200,7 +195,7 @@
 						<td>陳敬翰</td>
 						<td>2013年(碩)</td>
 						<td>The Study of Device Characteristics and the Random Telegraph Noise Analysis in HfO2-based Resistive Random Access Memory</td>
-						<td></td>
+						<td>聯電</td>
 					</tr>
 					<tr>
 						<td>蔡政達</td>
@@ -302,13 +297,13 @@
 						<td>張家銘</td>
 						<td>2008年(碩)</td>
 						<td>The Observation of Gate Current Instability in High-k Gate Dielectric MOSFET by a New Gate Current Random Telegraph Noise Approach</td>
-						<td>晶豪科</td>
+						<td>台積電</td>
 					</tr>
 					<tr>
 						<td>曾友良</td>
 						<td>2008年(碩)</td>
 						<td>Investigation of Reliability in Advanced Hf-Based High-k Gate Dielectrics nMOSFETs</td>
-						<td></td>
+						<td>晶豪科</td>
 					</tr>
 					<tr>
 						<td>蔡亞峻</td>
@@ -529,7 +524,7 @@
 
 		</ul>
 	</div>
-		<div id="footer">
+	<div id="footer">
 		<div>
 			<p>
 				<img src='images/IEEE.jpg'style='height:15px;margin:0 4px 0 0;'>

@@ -27,27 +27,30 @@ img.show{
 img:hover.show{
 	height:400px;
 }
-a.link{
-	color:#37a537;font-size:5px;
+a.link1{
+	color:#37a537;
+	font-size:5px;
 	text-decoration-line:none;
 }
-a:hover.link{color:red;}
+a:hover.link1{color:red;}
+a.link2{
+	color:#4a7ebb;
+	font-size:5px;
+	text-decoration-line:none;
+}
+a:hover.link2{color:red;}
 button.but{
 	background-color:#337ab7;
-	background-image:none;
 	border-color:#2e6da4;
 	color:white;
 	float:left;
 	border-style:solid;
 	border-width:1px;
-	display:block;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	padding:6px 12px 6px 12px;
-	position:relative;
-	touch-action:manipulation;
-	user-select:none;
-	white-spacing:0;
+	cursor: pointer;
 }
+.but:hover{background-color:#2e6da4;}
 </style>
 <body>
 	<div id="header">
@@ -84,20 +87,20 @@ button.but{
 				<img style='width:55%;margin:2% 0 0 4%;'src="images/topic.png">
 				<div style='float:right;width:40%;'>
 					<div style='color:#37a537;padding:7% 0 0 0;'>
-						<div style='font-size:16px;'>1. Embedded Memory<a href='#RRAM'class='link'>......請深入了解</a></div><br><br>			
-						<div style='font-size:16px;'>2. Neuromorphic Computing<a class='link'>......請深入了解</a></div> 					
+						<div style='font-size:16px;'>1. Embedded Memory<a href='#RRAM'class='link1'>......請深入了解</a></div><br><br>			
+						<div style='font-size:16px;'>2. Neuromorphic Computing<a class='link1'>......請深入了解</a></div> 					
 					</div>
-					<div style='border: 5px ridge #1045a3;height:330px;margin:23% 0 0 0;'>
+					<div style='border: 5px ridge #1045a3;height:330px;margin:37% 0 0 0;'>
 						文字介紹
 					</div>
 				</div>
 				<div style='color:#4a7ebb;margin:0 0 0 3.6%;'>
 					<div style='font-size:16px;'>
-						1. FinFETs<a href='#FinFet'class='link'>......請深入了解</a>
+						1. FinFETs<a href='#FinFet'class='link2'>......請深入了解</a>
 					</div> 
 					<div style='font-size:16px;'>2. Naonowire</div>
 					<div style='font-size:16px;'>
-						3. TFETs<a href='#TFET' class='link'>......請深入了解</a>
+						3. TFETs<a href='#TFET' class='link2'>......請深入了解</a>
 					</div> 					
 					<div style='font-size:16px;'>4. NC-FETs</div> 
 				</div>
