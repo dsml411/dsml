@@ -36,6 +36,7 @@ body {
 }
 #header ul {
 	margin: 0 auto;
+	margin-bottom:15px;
 	overflow: hidden;
 	text-align: center;
 	width: 960px;
