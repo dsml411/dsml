@@ -293,7 +293,8 @@ body {
 	float: left;
 	margin: 0 10px 0 20px;
 	padding: 0;
-	width: 678px;
+	width: 900px;
+	font-size:18px;
 }
 #body .content > img {
 	border: 1px solid #fff;
@@ -309,7 +310,6 @@ body {
 #body .content h3 {
 	background: url(../images/icons.png) no-repeat 0 -350px;
 	color: #000000;
-	font-size: 14px;
 	font-weight: normal;
 	line-height: 30px;
 	margin: 0;
