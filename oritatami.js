@@ -20,7 +20,7 @@ function expand(URI,SUB,EXP){
 
 var id,i ;		
 function visible(n) {
-	id=[document.getElementById('m0'),document.getElementById('m1'),document.getElementById('m2'),document.getElementById('m3'),document.getElementById('m4'),document.getElementById('m5'),document.getElementById('m6'),document.getElementById('m7'),document.getElementById('m8'),document.getElementById('m9')] ;
+	id=[document.getElementById('m0'),document.getElementById('m1'),document.getElementById('m2'),document.getElementById('m3'),document.getElementById('m4'),document.getElementById('m5'),document.getElementById('m6'),document.getElementById('m7'),document.getElementById('m8'),document.getElementById('m9'),document.getElementById('m10'),document.getElementById('m11'),document.getElementById('m9'),document.getElementById('m10'),document.getElementById('m11'),document.getElementById('m12'),document.getElementById('m13'),document.getElementById('m14'),document.getElementById('m15')] ;
 	for ( i = 0; i < id.length; i++) {
 		if (i==n) {
 			id[i].style.display='block' ;
