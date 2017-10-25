@@ -25,7 +25,7 @@ function visible(n) {
 		document.getElementById('m9'),document.getElementById('m10'),document.getElementById('m11'),
 		document.getElementById('m12'),document.getElementById('m13'),document.getElementById('m14'),document.getElementById('m15')] ;
 	for ( i = 0; i < id.length; i++) {
-		if (i==n) {
+		if (id[i].id=='m'+n) {
 			id[i].style.display='block' ;
 		}
 		else {
