@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+
+
+<head>
+<meta charset="UTF-8">
+<title>活動 - 前瞻元件技術實驗室</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript">
+$(document).ready(function() {	
+	$('.2017bbq').fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {},
+		thumbs	: {
+				width	: 50,
+				height	: 50
+			},
+		},
+	});	
+	$('.farewell').fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {},
+		thumbs	: {
+				width	: 50,
+				height	: 50
+			},
+		},
+	});	
+	$('.mountain').fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {},
+		thumbs	: {
+				width	: 50,
+				height	: 50
+			},
+		},
+	});	
+});
+</script>
+
+<style>
+button{
+	background-color:#337ab7;
+	border-color:#2e6da4;
+	color:white;
+	border-style:solid;
+	border-width:1px;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding:6px 12px 6px 12px;
+	cursor: pointer;
+	font-size:20px;
+	border-radius:10px;
+}
+button:hover{background-color:#2e6da4;}
+</style>
+
+</head>
+
+<body>
+	<div id="header">
+		<div class='language'>中文 / <a class='language'href='en_active.html'>English</a></div>	
+		<a href="home.html" class="logo"><img src="images/logo.png" alt=""></a>
+		<ul>
+			<li>
+				<a href="home.html">首頁</a>
+			</li>
+			<li>
+				<a href="about.html">簡介</a>
+			</li>
+			<li>
+				<a href="direction.html">研究方向</a>
+			</li>
+			<li>
+				<a href="member.html">成員</a>
+			</li>
+			<li>
+				<a href="research.html">研究貢獻</a>
+			</li>
+			<li>
+				<a href="access.html">位置</a>
+			</li>
+			<li class="selected">
+				<a href="active.html">活動</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<ul>
+			<li>
+			<div style="text-align: center;margin-bottom: 20px;border-bottom: 3px solid green;">
+				<h3 style='font-weight:bold;font-family:cursive;text-shadow:3px 3px 3px #cccccc;font-size:50px;'>Gallary</h3>
+			</div>
+			<div>
+				<h1>相簿主題:</h1>
+				<button onclick='show(1)'>2017中秋烤肉</button>
+				<button onclick='show(2)'>2017送舊</button>
+				<button onclick='show(3)'>2016飛鳳山出遊</button>
+				</div>
+			<div id='album1' style='text-align:center; margin-top:40px;center;'>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/01.jpg'title=''>
+					<img id='2017BBQ' src="images/2017BBQ/01.jpg" style='height:150px;'alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/02.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/02.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/03.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/03.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/04.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/04.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/05.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/05.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/06.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/06.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/07.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/07.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/08.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/08.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/09.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/09.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/10.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/10.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/11.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/11.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/12.jpg'title=' '>
+					<img id='2017BBQ' src="images/2017BBQ/12.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/13.jpg'title=''>
+					<img id='2017BBQ' src="images/2017BBQ/13.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/14.jpg'title=''>
+					<img id='2017BBQ' src="images/2017BBQ/14.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/15.jpg'title=''>
+					<img id='2017BBQ' src="images/2017BBQ/15.jpg" style='height:150px;' alt="" />
+				</a>
+				<a class="2017bbq" rel="fancybox-thumb" href='images/2017BBQ/16.jpg'title=''>
+					<img id='2017BBQ' src="images/2017BBQ/16.jpg" style='height:150px;' alt="" />
+				</a>
+			</div>
+				
+			<div id='album2' style='text-align:center; margin-top:40px;center;display:none;'>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/01.jpg'title=''>
+					<img id='farewell' src="images/farewell/01.jpg" style='height:150px;'alt="" />
+				</a>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/02.jpg'title=' '>
+					<img id='farewell' src="images/farewell/02.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/03.jpg'title=' '>
+					<img id='farewell' src="images/farewell/03.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/04.jpg'title=' '>
+					<img id='farewell' src="images/farewell/04.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/05.jpg'title=' '>
+					<img id='farewell' src="images/farewell/05.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/06.jpg'title=' '>
+					<img id='farewell' src="images/farewell/06.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/07.jpg'title=' '>
+					<img id='farewell' src="images/farewell/07.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/08.jpg'title=' '>
+					<img id='farewell' src="images/farewell/08.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='farewell' rel="fancybox-thumb" href='images/farewell/09.jpg'title=' '>
+					<img id='farewell' src="images/farewell/09.jpg" style='height:150px;' alt="" />
+				</a>
+			</div>
+			
+			
+			<div id='album3' style='text-align:center; margin-top:40px;center;display:none;'>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/01.jpg'title=''>
+					<img id='mountain' src="images/mountain/01.jpg" style='height:150px;'alt="" />
+				</a>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/02.jpg'title=' '>
+					<img id='mountain' src="images/mountain/02.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/03.jpg'title=' '>
+					<img id='mountain' src="images/mountain/03.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/04.jpg'title=' '>
+					<img id='mountain' src="images/mountain/04.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/05.jpg'title=' '>
+					<img id='mountain' src="images/mountain/05.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/06.jpg'title=' '>
+					<img id='mountain' src="images/mountain/06.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/07.jpg'title=' '>
+					<img id='mountain' src="images/mountain/07.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/08.jpg'title=' '>
+					<img id='mountain' src="images/mountain/08.jpg" style='height:150px;' alt="" />
+				</a>
+				<a  class='mountain' rel="fancybox-thumb" href='images/mountain/09.jpg'title=' '>
+					<img id='mountain' src="images/mountain/09.jpg" style='height:150px;' alt="" />
+				</a>
+			</div>
+		
+
+	<script>
+		function show(n){
+		var id=[document.getElementById('album1'),document.getElementById('album2'),document.getElementById('album3')]
+		for ( i = 0; i < id.length; i++) {
+		if (id[i].id=='album'+n) {
+			id[i].style.display='block' ;
+		}
+		else {
+			id[i].style.display='none' ;
+			}
+		}
+	}
+	</script>
+		
+	</div>
+	<div id="footer">
+		<div>
+			<p>
+				<img src='images/IEEE.jpg'style='height:15px;margin:0 4px 0 0;'>
+				<a href='https://www.facebook.com/edsNCTUXNTHU/'target="_blank">IEEE Electron Device Society Taipei section 清交學生分會</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
