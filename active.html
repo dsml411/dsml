@@ -22,22 +22,6 @@
 
 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-<script>
-$(document).ready(function() {	
-	$('.album6').fancybox({
-		prevEffect	: 'none',
-		nextEffect	: 'none',
-		helpers		: {
-			title	: { type : 'inside' },
-			buttons	: {},
-		thumbs	: {
-				width	: 50,
-				height	: 50
-			},
-		},
-	});		
-});
-</script>
 
 <style>
 button{
@@ -308,8 +292,24 @@ button:hover{background-color:#2e6da4;}
 		
 
 	<script>
-		function show(n){
 		var id=[0,1,2,3,4,5,6]
+		
+		$(document).ready(function() {	
+			$('.album'+id[-1]).fancybox({
+				prevEffect	: 'none',
+				nextEffect	: 'none',
+				helpers		: {
+					title	: { type : 'inside' },
+					buttons	: {},
+				thumbs	: {
+						width	: 50,
+						height	: 50
+					},
+				},
+			});		
+		});
+		
+		function show(n){
 		for ( i = 0; i < id.length; i++) {
 			if (id[i]==n) {
 				document.getElementById('album'+id[i]).style.display='block' ;
