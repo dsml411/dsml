@@ -309,27 +309,27 @@ button:hover{background-color:#2e6da4;}
 
 	<script>
 		function show(n){
-		var id=[document.getElementById('album6'),document.getElementById('album5'),document.getElementById('album4'),document.getElementById('album3'),document.getElementById('album2'),document.getElementById('album1'),document.getElementById('album0')]
+		var id=[0,1,2,3,4,5,6]
 		for ( i = 0; i < id.length; i++) {
-		if (id[i].id=='album'+n) {
-			id[i].style.display='block' ;
-			$('.album'+n).fancybox({
-				prevEffect	: 'none',
-				nextEffect	: 'none',
-				helpers		: {
-					title	: { type : 'inside' },
-					buttons	: {},
-				thumbs	: {
-						width	: 50,
-						height	: 50
+			if (id[i]==n) {
+				document.getElementById('album'+id[i]).style.display='block' ;
+				$('.album'+n).fancybox({
+					prevEffect	: 'none',
+					nextEffect	: 'none',
+					helpers		: {
+						title	: { type : 'inside' },
+						buttons	: {},
+					thumbs	: {
+							width	: 50,
+							height	: 50
+						},
 					},
-				},
-			});
-			
-		}
-		else {
-			id[i].style.display='none' ;						
+				});
+				
 			}
+			else {
+				document.getElementById('album'+id[i]).style.display='none' ;						
+				}
 		}
 	}
 	</script>
