@@ -93,6 +93,7 @@ button:hover{background-color:#2e6da4;}
 			</div>
 			<div>
 				<h1>相簿主題:</h1>
+				<button id='Free-form meeting' onclick='show(5)'>2018 畢業照團拍 </button>
 				<button id='Free-form meeting' onclick='show(4)'>2018 自由型會議 </button>
 				<button id='2017RRAMShortcourses' onclick='show(3)'>2017 RRAM Short courses</button>
 				<button id='2017bbq' onclick='show(2)'>2017中秋烤肉</button>
@@ -100,7 +101,37 @@ button:hover{background-color:#2e6da4;}
 				<button id='mountain' onclick='show(0)'>2016飛鳳山出遊</button>
 				
 				</div>
-			<div id='album4' style='text-align:center; margin-top:40px;'>
+			<div id='album5' style='text-align:center; margin-top:40px;'>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍1.jpg'title=''>
+					<img src="images/graduate photo/畢業團拍1.jpg" style='height:250px;'alt="" />
+				</a>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍2.JPG'title=' '>
+					<img src="images/graduate photo/畢業團拍2.JPG" style='height:250px;' alt="" />
+				</a>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍3.JPG'title=' '>
+					<img src="images/graduate photo/畢業團拍3.JPG" style='height:250px;' alt="" />
+				</a>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍4.JPG'title=' '>
+					<img src="images/graduate photo/畢業團拍4.JPG" style='height:250px;' alt="" />
+				</a>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍5.JPG'title=' '>
+					<img src="images/graduate photo/畢業團拍5.JPG" style='height:250px;' alt="" />
+				</a>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍6.JPG'title=' '>
+					<img src="images/graduate photo/畢業團拍6.JPG" style='height:250px;' alt="" />
+				</a>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍7.JPG'title=' '>
+					<img src="images/graduate photo/畢業團拍7.JPG" style='height:250px;' alt="" />
+				</a>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍8.JPG'title=' '>
+					<img src="images/graduate photo/畢業團拍8.JPG" style='height:250px;' alt="" />
+				</a>
+				<a  class='album5' rel="fancybox-thumb" href='images/graduate photo/畢業團拍9.JPG'title=' '>
+					<img src="images/graduate photo/畢業團拍9.JPG" style='height:250px;' alt="" />
+				</a>
+				
+				</div>
+			<div id='album4' style='text-align:center; margin-top:40px;display:none'>
 				<a  class='album4' rel="fancybox-thumb" href='images/Free-form meeting/自由型會議 1.JPG'title=''>
 					<img src="images/Free-form meeting/自由型會議 1.JPG" style='height:250px;'alt="" />
 				</a>
@@ -243,7 +274,7 @@ button:hover{background-color:#2e6da4;}
 
 	<script>
 		function show(n){
-		var id=[document.getElementById('album4'),document.getElementById('album3'),document.getElementById('album2'),document.getElementById('album1'),document.getElementById('album0')]
+		var id=[document.getElementById('album5'),document.getElementById('album4'),document.getElementById('album3'),document.getElementById('album2'),document.getElementById('album1'),document.getElementById('album0')]
 		for ( i = 0; i < id.length; i++) {
 		if (id[i].id=='album'+n) {
 			id[i].style.display='block' ;
