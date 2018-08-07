@@ -18,18 +18,16 @@ function expand(URI,SUB,EXP){
   }
 }
 
-var id,i ;		
+var id,id2,i ;		
 function visible(n) {
-	id=[document.getElementById('m0'),document.getElementById('m2'),document.getElementById('m4'),
-		document.getElementById('m6'),document.getElementById('m7'),document.getElementById('m8'),
-		document.getElementById('m9'),document.getElementById('m10'),document.getElementById('m11'),
-		document.getElementById('m12'),document.getElementById('m13'),document.getElementById('m14'),document.getElementById('m15')] ;
-	for ( i = 0; i < id.length; i++) {
-		if (id[i].id=='m'+n) {
-			id[i].style.display='block' ;
+	id='m'+n	
+	for ( i = 0; i < 30; i++) {    //預設最多30個人，成員太多就把i<30的30增加吧
+		id2='m'+i
+		if (i==n) {
+			document.getElementById(id).style.display='block' ;
 		}
 		else {
-			id[i].style.display='none' ;
+			document.getElementById(id2).style.display='none' ;
 		}
 	}
 }
