@@ -78,6 +78,7 @@ button:hover{background-color:#2e6da4;}
 			</div>
 			<div>
 				<h1>相簿主題:</h1>
+				<button id='lion mountain' onclick='show(7)'>2018 中秋烤肉 </button>
 				<button id='lion mountain' onclick='show(6)'>2018 獅頭山春遊 </button>
 				<button id='graduate photo' onclick='show(5)'>2018 畢業照團拍 </button>
 				<button id='Free-form meeting' onclick='show(4)'>2018 自由型會議 </button>
@@ -88,7 +89,37 @@ button:hover{background-color:#2e6da4;}
 				
 				
 				</div>
-			<div id='album6' style='text-align:center; margin-top:40px;'>
+			<div id='album7' style='text-align:center; margin-top:40px;'>
+				<a  class='album7' rel="fancybox-thumb" href='images/2018BBQ/01.jpg'title=''>
+					<img src="images/2018BBQ/01.jpg" style='height:250px;'alt="" />
+				</a>
+				<a  class='album7' rel="fancybox-thumb" href='images/2018BBQ/02.jpg'title=''>
+					<img src="images/2018BBQ/02.jpg" style='height:250px;'alt="" />
+				</a>
+				<a  class='album7' rel="fancybox-thumb" href='images/2018BBQ/03.jpg'title=''>
+					<img src="images/2018BBQ/03.jpg" style='height:250px;'alt="" />
+				</a>
+				<a  class='album7' rel="fancybox-thumb" href='images/2018BBQ/04.jpg'title=''>
+					<img src="images/2018BBQ/04.jpg" style='height:250px;'alt="" />
+				</a>
+				<a  class='album7' rel="fancybox-thumb" href='images/2018BBQ/05.jpg'title=''>
+					<img src="images/2018BBQ/05.jpg" style='height:250px;'alt="" />
+				</a>
+				<a  class='album7' rel="fancybox-thumb" href='images/2018BBQ/06.jpg'title=''>
+					<img src="images/2018BBQ/06.jpg" style='height:250px;'alt="" />
+				</a>
+				<a  class='album7' rel="fancybox-thumb" href='images/2018BBQ/07.jpg'title=''>
+					<img src="images/2018BBQ/07.jpg" style='height:250px;'alt="" />
+				</a>
+				<a  class='album7' rel="fancybox-thumb" href='images/2018BBQ/08.jpg'title=''>
+					<img src="images/2018BBQ/08.jpg" style='height:250px;'alt="" />
+				</a>
+				
+				
+				
+				
+				</div>
+			<div id='album6' style='text-align:center; margin-top:40px;display:none'>
 				<a  class='album6' rel="fancybox-thumb" href='images/lion mountain/獅頭山 1.jpg'title=''>
 					<img src="images/lion mountain/獅頭山 1.jpg" style='height:250px;'alt="" />
 				</a>
@@ -309,7 +340,7 @@ button:hover{background-color:#2e6da4;}
 		
 
 	<script>
-		var id=[6,5,4,3,2,1,0]
+		var id=[7,6,5,4,3,2,1,0]
 		
 		$(document).ready(function() {	
 			$('.album'+id[0]).fancybox({
