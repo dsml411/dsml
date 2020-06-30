@@ -78,6 +78,7 @@ button:hover{background-color:#2e6da4;}
 			</div>
 			<div>
 				<h1>相簿主題:</h1>
+				<button id='20200630' onclick='show(10)'>2020 期末聚餐 </button>
 				<button id='2019 Shimenshan' onclick='show(9)'>2019 石門山秋遊 </button>
 				<button id='2018 Tail' onclick='show(8)'>2018 尾牙 </button>
 				<button id='2018BBQ' onclick='show(7)'>2018 中秋烤肉 </button>
@@ -91,6 +92,10 @@ button:hover{background-color:#2e6da4;}
 				
 				
 					</div>
+			<div id='album10' style='text-align:center; margin-top:40px;'>
+				<a  class='album10' rel="fancybox-thumb" href='images/images/20200630/20200630.jpg'title=''>
+					<img src="images/20200630/20200630.jpg" style='height:250px;'alt="" />
+				</a>
 			<div id='album9' style='text-align:center; margin-top:40px;'>
 				<a  class='album9' rel="fancybox-thumb" href='images/images/2019 Shimenshan/001.jpg'title=''>
 					<img src="images/2019 Shimenshan/001.jpg" style='height:250px;'alt="" />
@@ -479,7 +484,7 @@ button:hover{background-color:#2e6da4;}
 		
 
 	<script>
-		var id=[9,8,7,6,5,4,3,2,1,0]
+		var id=[109,8,7,6,5,4,3,2,1,0]
 		
 		$(document).ready(function() {	
 			$('.album'+id[0]).fancybox({
